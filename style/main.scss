@@ -1,0 +1,431 @@
+@import 'extraStyle';
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Public+Sans:wght@200&display=swap');
+$primaryColor: linear-gradient(135deg, #33D35E 0%, #2AB6D9 99.58%);
+$secondaryColor: #30C88F;
+$ThirdColor: #2D314D;
+$Silver: #9597A5;
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+}
+header{
+    padding: 250px 0px 170px;
+    background-color: #F2F2F2;
+    background: url(../sourse/header/header_bacground.svg) no-repeat right;
+    position: relative;
+    
+}
+.header-navigation{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 9999;
+    // display: flex;
+    // align-items: center;
+    background-color: #fff;
+    padding: 18px;
+}
+.header-navigation .container{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.header-navigation-links a{
+    padding: 10px 35px;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: -0.107692px;
+    color: #9597A5;
+}
+.header-navigation-button{
+    @include linkbuttonPrimary ();
+}
+.header-content h1{
+    font-style: normal;
+    font-weight: 100;
+    font-size: 56px;
+    line-height: 64px;
+    letter-spacing: -1px;
+    margin-bottom: 25px;
+    color: #2D314D;
+    border-color: #F2F2F2;
+}
+.header-content p{
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: -0.28125px;
+    color: #9597A5;
+    margin-bottom: 35px;
+     max-width: 445px;
+
+}
+.header-content a{
+    @include linkbuttonPrimary ();
+}
+.special-phone{
+    position: absolute;
+    top: 11.5%;
+    right: 0;
+}
+
+.sectionOne{
+    background-color: #F4F5F7;
+    padding: 96px 0px;
+}
+.sectionOne h1{
+    font-weight: 100;
+font-size: 24px;
+line-height: 28px;
+/* identical to box height, or 117% */
+
+letter-spacing: -0.428571px;
+
+color: #2D314D;
+
+}
+
+.section1 h1{
+    font-style: normal;
+    font-weight: 100;
+    font-size: 30px;
+    line-height: 64px;
+    letter-spacing: -0.714286px;
+    color: #2D314D;
+    margin-top: 90px;
+}
+.section1 p{
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: -0.28125px;
+    color: #9597A5;
+    max-width: 635px;
+    margin-top: 16px;
+}
+
+                              // section 1
+
+.card{
+    margin-top: 72px;
+    display: flex;
+    margin-bottom: 94px;
+    justify-content: space-between;
+}
+.card img{
+    width: 72px;
+    height: 72px;
+    margin-top: 15px;
+}
+.card h1{
+    margin-top: 40px;
+}
+.card1{
+    padding: 0px 40px;
+}
+
+                                 // section2
+.section2{
+    background-color: #F2F2F2;;
+}
+.section2-card1 h1{
+    font-style: normal;
+    font-weight: 100;
+    font-size: 16px;
+    // line-height: 20px;
+    // letter-spacing: -0.285714px;
+    color: #2D314D;
+}
+.section2-cards{
+    margin-top: 72px;
+    display: flex;
+    // border: 2px solid red;
+    margin-bottom: 94px;
+    justify-content: space-between;
+    background-color:#FFFFFF;
+}
+.section2-cards h5{
+    font-size: 10px;
+    line-height: 18px;
+    letter-spacing: -0.15625px;
+    color: #9597A5;
+    max-width: 207px;
+    // padding: 30px;
+    justify-content: space-between;
+    margin-left: 24px;
+    margin-top: 25px;
+}
+.section2 .section2-cards h1{
+    font-style: normal;
+    font-weight: 100;
+    font-size: 26px;
+    line-height: 30px;
+    letter-spacing: -0.285714px;
+    color: #2D314D;
+    margin-top: 8px;
+    max-width: 332px;
+    margin-left: 20px;
+}
+.section2-cards p{
+    font-size: 13px;
+    line-height: 18px;
+    max-width: 307px;
+    padding: 20px;
+    /* or 138% */
+
+    letter-spacing: -0.203125px;
+    margin-top: 8px;
+    color: #9597A5;
+
+}
+
+// ------------------------------------------------- footer-------------------------------------------------------------------------------//
+footer{
+    background-color: #2D314D;
+    padding: 48px 0px ;
+}
+footer .container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer{
+    &-navigation{
+        display: flex;
+        width: 70%;
+        justify-content: space-between;
+        align-items: center;
+        &-logoside{
+            &-img{
+                margin-bottom: 55px;
+            }
+            &-network{
+                &-a{
+                    padding: 6px;
+                    display: inline-block;
+                }
+            }
+        }
+        &-navItems{
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            &-a{
+                padding: 4px;
+            }
+        }
+     }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 375px){
+    .container{
+        max-width: 375px;
+        width: 10%;
+        margin: 0 auto;
+    }
+    header{
+        padding: 250px 0px 170px;
+        background-color: #F2F2F2;
+        background: url(../sourse/header/header_bacground.svg) no-repeat right;
+        position: relative;
+        
+    }
+    .header-navigation{
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100%;
+        z-index: 9999;
+        // display: flex;
+        // align-items: center;
+        background-color: #fff;
+        padding: 18px;
+    }
+    .header-navigation .container{
+        display: flex;
+        justify-content: space-between;
+    
+    }
+    
+    .header-navigation-links a{
+        padding: 10px 35px;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: -0.107692px;
+        color: #9597A5;
+    }
+    .header-navigation-button{
+        @include linkbuttonPrimary ();
+    }
+    .header-content h1{
+        font-style: normal;
+        font-weight: 100;
+        font-size: 56px;
+        line-height: 64px;
+        letter-spacing: -1px;
+        margin-bottom: 25px;
+        color: #2D314D;
+        border-color: #F2F2F2;
+    }
+    .header-content p{
+        font-size: 18px;
+        line-height: 28px;
+        letter-spacing: -0.28125px;
+        color: #9597A5;
+        margin-bottom: 35px;
+         max-width: 445px;
+    
+    }
+    .header-content a{
+        @include linkbuttonPrimary ();
+    }
+    .special-phone{
+        position: absolute;
+        top: 11.5%;
+        right: 0;
+    }
+    
+    .sectionOne{
+        background-color: #F4F5F7;
+        padding: 96px 0px;
+    }
+    .sectionOne h1{
+        font-weight: 100;
+    font-size: 24px;
+    line-height: 28px;
+    /* identical to box height, or 117% */
+    
+    letter-spacing: -0.428571px;
+    
+    color: #2D314D;
+    }
+// ----------------------------------------------------section 1-----------------------------------------------------------------------------------//
+
+                              .card{
+                                margin-top: 72px;
+                                display: table-column;
+                                margin-bottom: 94px;
+                                justify-content: space-between;
+                            }
+                            .card img{
+                                width: 72px;
+                                height: 72px;
+                                margin-top: 15px;
+                            }
+                            .card h1{
+                                margin-top: 40px;
+                            }
+                            .card1{
+                                padding: 0px 40px;
+                            }
+                            
+                                                             // section2
+                            .section2{
+                                background-color: #F2F2F2;
+                            }
+                            .section2-card1 h1{
+                                font-style: normal;
+                                font-weight: 100;
+                                font-size: 16px;
+                                // line-height: 20px;
+                                // letter-spacing: -0.285714px;
+                                color: #2D314D;
+                            }
+                            .section2-cards{
+                                margin-top: 72px;
+                                display: flex;
+                                // border: 2px solid red;
+                                margin-bottom: 94px;
+                                justify-content: space-between;
+                                background-color:#FFFFFF;
+                            }
+                            .section2-cards h5{
+                                font-size: 10px;
+                                line-height: 18px;
+                                letter-spacing: -0.15625px;
+                                color: #9597A5;
+                                max-width: 207px;
+                                // padding: 30px;
+                                justify-content: space-between;
+                                margin-left: 24px;
+                                margin-top: 25px;
+                            }
+                            .section2 .section2-cards h1{
+                                font-style: normal;
+                                font-weight: 100;
+                                font-size: 26px;
+                                line-height: 30px;
+                                letter-spacing: -0.285714px;
+                                color: #2D314D;
+                                margin-top: 8px;
+                                max-width: 332px;
+                                margin-left: 20px;
+                            }
+                            .section2-cards p{
+                                font-size: 13px;
+                                line-height: 18px;
+                                max-width: 307px;
+                                padding: 20px;
+                                /* or 138% */
+                            
+                                letter-spacing: -0.203125px;
+                                margin-top: 8px;
+                                color: #9597A5;
+                            
+                            }
+                            
+                            // footer
+                            footer{
+                                background-color: #2D314D;
+                                height: 191px;
+                                display: flex;
+                            }
+                            
+                            .footer-icon a{
+                                margin-top: 57px;
+                            }
+                            .footerCard {
+                                display: flex;
+                            }
+}
