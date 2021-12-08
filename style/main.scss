@@ -210,30 +210,53 @@ footer .container{
         justify-content: space-between;
         align-items: center;
         &-logoside{
-            &-img{
-                margin-bottom: 55px;
-            }
+     &-logo{
+         margin-bottom: 55px;
+     }
+  }
             &-network{
                 &-a{
                     padding: 6px;
                     display: inline-block;
+                    margin-top: 55px;
                 }
-            }
-        }
+         
         &-navItems{
             text-align: left;
             display: flex;
             flex-direction: column;
-            &-a{
-                padding: 4px;
+       &-a{
+            padding: 4px;
+            font-size: 15px;
+            line-height: 26px;
+            letter-spacing: -0.234375px;
+            color: #FFFFFF;
+            text-decoration: 90%;
             }
         }
+        & p{
+            font-size: 15px;
+            line-height: 26px;
+            text-align: right;
+            letter-spacing: -0.234375px;
+            color: #FFFFFF;
+            mix-blend-mode: normal;
+            opacity: 0.5;
+        }
+   &-invite{
+         @include linkbuttonPrimary();
+         display: inline-block;
+         margin-bottom: 24px;
      }
 
 }
+.footer-navigation-navItems{
+    color: #fff;
+}
 
-
-
+.footer-linkk{
+    @include linkbuttonPrimary ();
+}
 
 
 
@@ -404,7 +427,7 @@ footer .container{
                             }
                             .section2-cards p{
                                 font-size: 13px;
-                                line-height: 18px;
+                                line-height: 18px;   
                                 max-width: 307px;
                                 padding: 20px;
                                 /* or 138% */
@@ -413,19 +436,7 @@ footer .container{
                                 margin-top: 8px;
                                 color: #9597A5;
                             
-                            }
-                            
-                            // footer
-                            footer{
-                                background-color: #2D314D;
-                                height: 191px;
-                                display: flex;
-                            }
-                            
-                            .footer-icon a{
-                                margin-top: 57px;
-                            }
-                            .footerCard {
-                                display: flex;
-                            }
+                            } 
+                        }
+    }
 }
